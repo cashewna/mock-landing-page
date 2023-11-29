@@ -1,0 +1,33 @@
+:root {
+    --dark-bg-color: #1F2937;
+    --light-primary-color: #F9FAF8;
+    --light-secondary-color: #E5E7EB;
+    --dark-text-primary-color: #1F2937;
+    --cta-btn-bg-color: #3882F6;
+}
+
+header,
+.hero-section {
+    background-color: var(--dark-bg-color);
+    padding: 1rem 8rem;
+}
+
+header li {
+    list-style-type: none;
+    color: var(--light-primary-color);
+}
+
+header ul,
+.hero-section {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-logo,
+.hero-content h1 {
+    color: var(--light-primary-color);
+}

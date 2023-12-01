@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --dark-bg-color: #1F2937;
     --light-primary-color: #F9FAF8;
     --light-secondary-color: #E5E7EB;
     --dark-text-primary-color: #1F2937;
     --cta-btn-bg-color: #3882F6;
-    font-family: Arial, Helvetica;
+    font-family: Roboto, Helvetica;
 }
 
 header,
@@ -41,25 +46,122 @@ header li,
     color: var(--light-primary-color);
 }
 
-.hero-content {
-    padding-left: 40px;
+.hero-section {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
 }
 
 .hero-content h1 {
     font-size: 48px;
     font-weight: extra-bold;
-    margin-bottom: -0.5rem;
 }
 
 .hero-section img {
     background-color: grey;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-content button {
     display: inline-block;
-    padding: 15px 32px;
+    margin-top: 0.5rem;
+    padding: 8px 32px;
     background-color: var(--cta-btn-bg-color);
     border: none;
     color: var(--light-primary-color);
     border-radius: 8px;
 }
+
+/** Random info */
+.random-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.random-info-section h1 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: var(--dark-text-primary-color);
+    margin: 2rem;
+}
+
+.random-info-section ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0 8rem;
+}
+
+.random-info-section p {
+    margin-top: 0.5rem;
+}
+
+.random-info-section img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--cta-btn-bg-color);
+    border-radius: 0.5rem;
+}
+
+.random-info-section li {
+    list-style-type: none;
+}
+
+/** Quote */
+.quote-section {
+    display: flex;
+    background-color: var(--light-secondary-color);
+    padding: 4rem 10rem;
+    justify-content: center;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: var(--dark-text-primary-color);
+}
+
+.cta-banner {
+    margin: 4rem 8rem;
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+
+.cta-banner,
+.cta-banner button {
+    background-color: var(--cta-btn-bg-color);
+}
+
+.cta-banner,
+.cta-banner button {
+    color: var(--light-primary-color);
+}
+
+.cta-title {
+    flex: 2 1 auto;
+}
+
+.cta-content p {
+    margin-top: 0.2rem;
+    color: var(--light-secondary-color);
+}
+
+.cta-banner button {
+    margin-left: 2rem;
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--light-primary-color);
+    border-radius: 0.5rem;
+}
+
+footer {
+    display: flex;
+    background-color: var(--dark-bg-color);
+    justify-content: center;
+    padding: 2rem;
+}
+
+footer span {
+    color: var(--light-primary-color);
